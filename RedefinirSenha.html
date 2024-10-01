@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="assets/css/styleRedefinirSenha.css">
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0;">
+    <div
+        style="max-width: 400px; margin: auto; padding: 20px; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center;">Redefinir Senha</h2>
+        <form action="/redefinir-senha" method="post" style="margin-top: 20px;">
+            <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required
+                style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;"
+                autofocus>
+
+            <label for="senhaNova" style="display: block; margin-bottom: 5px;">Nova Senha:</label>
+            <input type="password" id="senhaNova" name="senhaNova" placeholder="Digite sua nova senha" required
+                style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+
+            <label for="senhaConfirmacao" style="display: block; margin-bottom: 5px;">Confirme Nova Senha:</label>
+            <input type="password" id="senhaConfirmacao" name="senhaConfirmacao"
+                placeholder="Digite novamente sua nova senha" required
+                style="width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: 1px solid #ccc;">
+
+            <button type="submit"
+                style="width: 100%; padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Redefinir
+                Senha</button>
+        </form>
+    </div>
+    <script src="assets/js/scriptRedefinirSenha.js"></script>
+</body>
+
+</html>

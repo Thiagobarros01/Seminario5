@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Agente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styleCadastrarAnalista.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#inicio">Início</a>
+        <a href="#abrir-ticket">Abrir Ticket</a>
+        <a href="#historico-tickets">Histórico de Tickets</a>
+        <a href="#administracao">Administração</a>
+    </div>
+    <div class="header">
+        <span>Painel de Controle</span>
+    </div>
+    <div class="container">
+        <h1>Novo Agente</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Endereço de e-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <div class="password-container">
+                    <input type="password" id="senha" name="senha" required>
+                    <button type="button" id="togglePassword">Mostrar</button>
+                </div>
+            </div>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+    <script src="assets/js/scriptCadastrarAnalista.js"></script>
+</body>
+</html>

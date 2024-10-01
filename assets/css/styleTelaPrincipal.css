@@ -1,0 +1,226 @@
+/* Reset de estilos e configurações básicas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais do corpo do documento */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.header h1 {
+    font-size: 40px; /* Aumentando o tamanho do título */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.header p {
+    font-size: 20px; /* Aumentando o tamanho do texto */
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: jus;
+}
+
+/* Menu de navegação */
+.menu {
+    background-color: #007bff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0; /* Reduzindo o preenchimento para os links */
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.menu-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px; /* Aumentando o tamanho dos links */
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.menu-item:hover,
+.menu button:hover {
+    color: #ffcc00;
+    text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
+}
+
+.menu button {
+    background-color: #fffffffb;
+    color: #000000;
+    border: none;
+    padding: 25px 45px; /* Aumentando o tamanho do botão */
+    border-radius: 5px;
+    font-size: 20px; /* Aumentando o tamanho do texto do botão */
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #0046f8;
+}
+
+/* Estilos das seções */
+.section {
+    padding: 90px 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-top: -100px
+}
+
+.section.visible {
+    opacity: 1;
+}
+
+.section h1 {
+    font-size: 40px; /* Aumentando o tamanho do título das seções */
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Estilos dos serviços */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.service {
+    flex: 0 0 calc(33.33% - 40px); /* Ajuste para melhor espaçamento entre os serviços */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service h2 {
+    font-size: 28px; /* Aumentando o tamanho do título dos serviços */
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px; /* Aumentando o preenchimento do rodapé */
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 50px; /* Adicionando margem superior para separar do conteúdo anterior */
+}
+
+/* Seção "O Que Fazemos" */
+.what-we-do {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    max-width: 1000px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza na página */
+}
+
+.what-we-do img {
+    width: 100%; /* Garante que a imagem ocupe a largura total */
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#o-que-fazemos {
+    margin-top: -300px; /* Adicionando margem superior para separar do conteúdo anterior */
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-links {
+        margin-top: 10px;
+    }
+
+    .menu-logo {
+        margin: 10px auto;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+    }
+
+    .header {
+        margin-top: 50px;
+    }
+
+    .section {
+        padding: 80px 10px;
+    }
+
+    .service {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .what-we-do {
+        max-width: calc(100% - 40px);
+    }
+}

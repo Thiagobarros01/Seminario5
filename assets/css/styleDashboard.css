@@ -1,0 +1,206 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.open-ticket-link {
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.open-ticket-link:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos da dashboard */
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.chart {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 30%;
+    min-width: 300px;
+    text-align: center;
+}
+
+.chart canvas {
+    max-width: 100%;
+}
+
+/* Estilos do formulário de cadastro e login */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #555;
+}
+
+.form-container p {
+    margin-top: 20px;
+}
+
+.form-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos da lista de tickets */
+.ticket-list {
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.ticket-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ticket-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ticket-list table th,
+.ticket-list table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.ticket-list table th {
+    background-color: #f4f4f4;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .dashboard {
+        padding: 10px;
+    }
+
+    .chart {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .main-container {
+        height: auto;
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .ticket-list {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .ticket-list table th,
+    .ticket-list table td {
+        padding: 5px;
+    }
+}

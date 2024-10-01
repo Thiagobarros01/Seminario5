@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Chamados</title>
+    <link rel="stylesheet" href="assets/css/styleCadastrarChamados.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cadastro de Chamados</h2>
+        <form id="ticket-form" method="post" onsubmit="return submitForm()">
+            <label for="nome">Título:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="status_ticket">Status do Chamado:</label><br>
+            <select id="status_ticket" name="status_ticket" required>
+                <option value="aberto">Aberto</option>
+                <option value="pendente">Pendente</option>
+                <option value="resolvido">Resolvido</option>
+            </select><br>
+
+            <label for="prioridade">Prioridade:</label><br>
+            <select id="prioridade" name="prioridade" required>
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select><br>
+
+            <label for="descricao">Descrição:</label><br>
+            <textarea id="descricao" name="descricao" required></textarea><br>
+
+            <div class="form-buttons">
+                <button type="submit">Criar</button>
+                <button type="button" class="back-button" onclick="goBack()">Voltar</button>
+            </div>
+        </form>
+        <!-- Notificação para usuário cadastrado com sucesso -->
+        <div id="notification" class="notification"></div>
+    </div>
+
+    <script src="assets/js/scriptCadastrarChamados.js"></script>
+</body>
+
+</html>
